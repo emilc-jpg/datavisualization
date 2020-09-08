@@ -1,6 +1,6 @@
 ## Journalism in the Age of Data
 
-[Review](https://emilyc-jpg.github.io/files/ageofdata-review.pdf)
+[Review](https://emilyc-jpg.github.io/datavisualization/files/ageofdata-review.pdf)
 
 
 
