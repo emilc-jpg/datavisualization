@@ -1,3 +1,4 @@
 theme: jekyll-theme-slate
 title: Data Visualization
 description: test
+baseurl: /datavisualization
