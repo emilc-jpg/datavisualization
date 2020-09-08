@@ -1,3 +1,4 @@
-## Data Visualization
+## Data Visualization (Github Pages)
 
-Github Pages configuration
+Helpful links on customization: 
+https://dh.obdurodon.org/jekyll.xhtml
