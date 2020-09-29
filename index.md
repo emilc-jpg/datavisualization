@@ -1,3 +1,19 @@
+## Teaching to See
+- Difference between geometric accuracy and optical accuracy
+- Usage of negative space for balance and harmony
+- Importance of common structure and evenness throughout piece
+- Sufficiently distinct objects to ensure readability 
+- Proper optical spacing between objects with usage of rhythm and color
+- Using color intelligently: balance of hue, saturation to convey different messages
+- Different types of info can live together without harming each other
+- Objective to capture attention of someone walking by
+- Should entice to look at more detailed information
+- For data visualization, sparking knowledge and curiousity for audience 
+
+[Full Review](https://emilc-jpg.github.io/datavisualization/files/teachingtosee-review.pdf)
+
+
+
 ## Journalism in the Age of Data
 
 [Review](https://emilc-jpg.github.io/datavisualization/files/ageofdata-review.pdf)
