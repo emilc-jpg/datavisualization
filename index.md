@@ -1,3 +1,13 @@
+## Stephen Malinowski’s Bach, Fugue in A minor, BWV 904 Visualization Review
+
+[Review](https://emilc-jpg.github.io/datavisualization/files/stephenmalinowski-review.pdf)
+
+
+## COVID-19 Symptoms and Similarities Project Proposal
+https://docs.google.com/presentation/d/1YSx9sqOEBDdrs0fYi7pW-t5AgNWZdpamZwOohceYotI/edit?usp=sharing
+
+
+
 ## Teaching to See
 - Difference between geometric accuracy and optical accuracy
 - Usage of negative space for balance and harmony
