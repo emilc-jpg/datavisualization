@@ -25,14 +25,14 @@ p <- ggplot(data=heartdata2, aes(x=cp, y=trestbps, fill=cp)) + geom_bar(stat="id
 p + labs(title="Chest Pain Type and Resting Blood Pressure", subtitle="Average resting blood pressure by each type of chest pain.", x="Chest Pain Type", y="Resting Blood Pressure") + guides(fill=guide_legend(title=NULL))
 ```
 
-https://emilc-jpg.github.io/datavisualization/files/heartdatachart1
+https://emilc-jpg.github.io/datavisualization/files/heartdatachart1.png
 
 ```
 # Variable with column chart (age x chest pain type x frequency)
 o <- ggplot(data=heartdata, aes(age, fill=cp)) + geom_bar(position=position_dodge()) + scale_x_binned() + scale_fill_brewer(palette ="Set3") 
 o + labs(title="Age and Chest Pain Type", subtitle="Frequency of Chest Pain Type within Different Age Groups",x="Age in Years", y="Frequency") + guides(fill=guide_legend(title="Chest Pain Type"))
 ```
-https://emilc-jpg.github.io/datavisualization/files/heartdatachart2
+https://emilc-jpg.github.io/datavisualization/files/heartdatachart2.png
 
 
 
