@@ -1,3 +1,30 @@
+## US Trending Videos Dataset
+Created two charts, this time in Python on the US Trending Videos dataset obtained from [here](https://www.kaggle.com/datasnaek/youtube-new?select=USvideos.csv)
+
+    import pandas as pd
+    import numpy as np
+    from matplotlib import pyplot as plt
+    import seaborn as sns
+    from seaborn import lineplot
+    
+    # Import dataset
+    df = pd.read_csv('USvideos.csv', index_col=0)
+    df.head()
+
+    sns.set(style="dark")
+    # Line Chart (views over time)
+    f = lineplot(x='trending_date', y='views', data=df)
+    plt.title('Number of views over time in US trending videos')
+    plt.show()
+
+![US Trending Videos Chart 1](https://emilc-jpg.github.io/datavisualization/files/USvideos1.png)
+
+    # Line histogram (likes versus dislikes)
+    grid = sns.lmplot('likes','dislikes', df, size=7, truncate=True)
+    plt.title('Relationship between likes and dislikes in US trending videos')
+    plt.show()
+![US Trending Videos Chart 2](https://emilc-jpg.github.io/datavisualization/files/USvideos2.png)
+
 ## Health Disease Dataset
 I created two charts in R on the Heart Disease dataset obtained from [here](https://www.kaggle.com/ronitf/heart-disease-uci).
 
