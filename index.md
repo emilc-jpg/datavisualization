@@ -1,3 +1,40 @@
+## Kickstarter Projects Dataset
+Created a visualization on Kickstarter projects using ggplot2 in R. Dataset obtained from [here](https://www.kaggle.com/kemical/kickstarter-projects).
+
+    library(ggplot2)
+    library(RColorBrewer)
+    
+    # Load data
+    kickstarterdata = read.csv("C:\\Users\\Emily Chen\\Documents\\RStudio_Projects\\kickstarter-projects-2018.csv")
+    # Data exploration
+    summary(kickstarterdata)
+    head(kickstarterdata)
+    min(kickstarterdata$launched) # todo: remove 1970 "null" values
+    # Remove undefined/impossible values
+    # Remove 1970 attributes, as well as those with undefined state.
+    kickstarterdata2<-kickstarterdata[!(kickstarterdata$launched == "1970-01-01 01:00:00" | kickstarterdata$state == "undefined"),]
+    min(kickstarterdata2$launched)
+
+    brewer.pal(12, "Set2")
+    display.brewer.pal(12, "Set2")
+    colors <- c("canceled" = "#E78AC3", "failed" = "#FC8D62", "live" = "#8DA0CB", "successful" = "#66C2A5", "suspended" = "#B3B3B3")
+
+
+    d <- ggplot(data = kickstarterdata2, 
+                mapping = aes(main_category))
+    d + geom_bar(aes(fill = state), colour = "black") + theme_bw() + 
+      scale_fill_manual(values = colors) + 
+      labs(title = "Kickstarter Projects Results by Category",
+           subtitle = "(2009-2018)", 
+           x = "Category",
+           y = "Number of Projects") + guides(fill=guide_legend(title="Status"))
+          
+![Kickstarter Projects Figure](https://emilc-jpg.github.io/datavisualization/files/kickstarterdata1.png)  
+
+
+
+
+
 ## US Trending Videos Dataset
 Created two charts, this time in Python on the US Trending Videos dataset obtained from [here](https://www.kaggle.com/datasnaek/youtube-new?select=USvideos.csv)
 
