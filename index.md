@@ -1,7 +1,7 @@
 ## Covid-19 Symptoms Similarity in Other Medical Conditions (with Kevin Pennington)
 We implemented our visualization using Seaborn on Python, and looking first at death count and mortality rate between the conditions we have collected: COVID19, Pneumonia, Flu, Tuberculosis, Bronchial Asthma, Bronchitis, Strep Throat, Measles, Mononucleosis, Lyme Disease, and Meningitis.
 
-![COVID19 and Conditions Death Count and Mortality Rate](https://emilc-jpg.github.io/datavisualization/files/kickstarterdata1.png)  
+![COVID19 and Conditions Death Count and Mortality Rate](https://emilc-jpg.github.io/datavisualization/files/covid19symptoms1.png)  
 
 In this visualization, the height of each condition and size reflects the number of deaths (with higher position in the Y axis representing a higher death count) and the area covered by each condition scaled to the death count to give easy relative comparison between conditions with numerical values included in the legend for reference. Lastly, the darkness of the red hue of each condition represents an increasing mortality rate going lightest to darkest being the most deadly.
 
@@ -43,7 +43,7 @@ In this visualization, the height of each condition and size reflects the number
 
 Following the previous visualization, this time we create a visualization based on case and death count. In this, each condition’s number of cases is represented by the size of the sphere, with the outer sphere being case count and color hue corresponding to mortality rate, while the inner sphere corresponds to death count giving a good visualization of the proportion rather than a pure numerical percent. 
 
-![COVID19 and Conditions Case Count and Mortality Rate](https://emilc-jpg.github.io/datavisualization/files/kickstarterdata1.png)  
+![COVID19 and Conditions Case Count and Mortality Rate](https://emilc-jpg.github.io/datavisualization/files/covid19symptoms2.png)  
 
     df = pd.read_csv("data1.csv")
     print(df.dtypes)
@@ -86,7 +86,7 @@ Following the previous visualization, this time we create a visualization based 
 
 We also compared symptom sensitivity between COVID19 and influenza to analyze and compare the percentage of positively tested patients that have certain symptoms. Originally the symptoms have been organized in ascending height by the flu attribute, but since our topic focuses on COVID, we have reordered the symptoms based on COVID symptom priority.
 
-![Symptom Sensitivity Comparison: COVID19 and Influenza](https://emilc-jpg.github.io/datavisualization/files/kickstarterdata1.png)  
+![Symptom Sensitivity Comparison: COVID19 and Influenza](https://emilc-jpg.github.io/datavisualization/files/covid19symptoms3.png)  
 
 It is important to note that these symptoms are only for symptomatic COVID19 patients, and that most people who have COVID19 are asymptomatic. Looking at this visual, we can see that overall the symptom sensitivity between COVID19 and influenza are very similar. From this information alone it would be somewhat difficult to make a clear statement about diagnosis and helps explain why COVID19 became a disease requiring lab testing for diagnosis confirmation.. 
 
@@ -109,7 +109,7 @@ On top of this, measles are another form of illness that have common symptoms wi
 
 Here we compare COVID symptom profiles with other medical conditions mentioned earlier based merely on the presence or absence of certain symptoms found in COVID19. The rightmost bar displays COVID19 symptoms and all the colored bars for each individual symptom (headache, fever,etc). This provides a good visualization of the degree of similarity between COVID and the other diseases we compared it to. 
 
-![Symptom Sensitivity Comparison: COVID19 and Influenza](https://emilc-jpg.github.io/datavisualization/files/kickstarterdata1.png)  
+![Symptom Comparison between Conditions](https://emilc-jpg.github.io/datavisualization/files/covid19symptoms4.png)  
 
     df = pd.read_csv("CovidFluSympt3.csv")
     print(df.head())
