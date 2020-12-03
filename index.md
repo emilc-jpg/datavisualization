@@ -1,4 +1,10 @@
 ## Covid-19 Symptoms Similarity in Other Medical Conditions (with Kevin Pennington)
+In this, we attempted to investigate major symptoms of Covid-19 and other illnesses of significant spread and compare how different individual symptoms and combinations of symptoms increase or decrease likelihood of Covid-19 diagnosis.
+
+We gather publicly available up-to date data for COVID and other similar prevalent or widespread/fatal medical conditions for symptoms, number of US cases, and number of US deaths. However, limited symptom lists for conditions made traditional data extraction methods difficult. In addition, lack of detailed and accurate consensus on symptoms and signs across sources proved using singular sources not viable. Even official CDC records (from the Centers for Disease Control and Prevention website and archives) were not always extensive nor consistent, with much of the conditions statistics outdated and lacking. 
+
+As a solution, we pooled and cross-referenced information from multiple sources, including the CDC website, various NCBI research papers, and reputable healthcare websites such as MayoClinic and WebMD. We combined symptom lists from more than one healthcare website source to be more consistent and extensive versus being reliant on only one. In addition, we updated outdated conditions for estimated cases and mortality rates based on past statistics. In one excel sheet, different conditions were compiled with a list of total symptoms as well as degree of symptom sensitivity for each symptom. In a second excel sheet, conditions contained information on number of cases and number of deaths per year in the US.
+
 We implemented our visualization using Seaborn on Python, and looking first at death count and mortality rate between the conditions we have collected: COVID19, Pneumonia, Flu, Tuberculosis, Bronchial Asthma, Bronchitis, Strep Throat, Measles, Mononucleosis, Lyme Disease, and Meningitis.
 
 ![COVID19 and Conditions Death Count and Mortality Rate](https://emilc-jpg.github.io/datavisualization/files/covid19symptoms1.png)  
